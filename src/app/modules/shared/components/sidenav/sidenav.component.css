@@ -1,4 +1,4 @@
-/* .dashboard-container {
+.dashboard-container {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -6,6 +6,11 @@
     bottom: 0;
     left: 0;
     right: 0;
+}
+
+.is-mobile .dashboard-toolbar {
+    position: fixed;
+    z-index: 2;
 }
 
 h1.app-name {
@@ -41,4 +46,7 @@ div ul {
 .header {
     margin-top: 20px;
 }
- */
+
+.icon {
+    margin-right: 10px;
+}

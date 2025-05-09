@@ -3,7 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DashboardModule } from './modules/dashboard/dashboard.module';
-
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
@@ -11,7 +12,10 @@ import { DashboardModule } from './modules/dashboard/dashboard.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    DashboardModule
+    DashboardModule,
+    MatSlideToggleModule,
+    BrowserAnimationsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
